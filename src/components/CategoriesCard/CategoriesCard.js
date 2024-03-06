@@ -2,9 +2,9 @@ import React from "react";
 import { Image, Text, TouchableWithoutFeedback, View } from "react-native";
 import styles from './CategoriesCard.style';
 
-const CategoriesCard = ({categories}) => {
+const CategoriesCard = ({categories, onSelect}) => {
     return(
-        <TouchableWithoutFeedback>
+        <TouchableWithoutFeedback onPress={onSelect}>
             <View style={styles.container}>
                 <Image 
                     style={styles.image}
